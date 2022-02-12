@@ -1,0 +1,18 @@
+package net.ducorits.testmod.block;
+
+import net.ducorits.testmod.TestMod;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.*;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
+
+public class ModBlocks {
+    public static final Block KAK = new Block(FabricBlockSettings.of(Material.SOIL, MapColor.DIRT_BROWN).strength(1F));
+    public static final HoopKak HOOP_KAK = new HoopKak(FabricBlockSettings.of(Material.SOIL, MapColor.DIRT_BROWN).strength(1F));
+            //public static final Block STONE = Blocks.register("stone", new Block(AbstractBlock.Settings.of(Material.STONE, MapColor.STONE_GRAY).requiresTool().strength(1.5f, 6.0f)));
+    public static void registerModBlocks() {
+        Registry.register(Registry.BLOCK, new Identifier(TestMod.MOD_ID, "kak"), KAK);
+        Registry.register(Registry.BLOCK, new Identifier(TestMod.MOD_ID, "hoop_kak"), HOOP_KAK);
+        TestMod.LOGGER.info("Registering Mod Blocks for " + TestMod.MOD_ID);
+    }
+}
