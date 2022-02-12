@@ -37,12 +37,13 @@ public class PoepCraft implements ModInitializer {
 //        public void onInitialize() {
 //            DEMO_BLOCK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, "tutorial:demo_block_entity", FabricBlockEntityTypeBuilder.create(HoopKak::new, HoopKak).build(null));
 //        }
-        DIARREE = Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "diarree"), new FluidBlock(STILL_DIARREE, FabricBlockSettings.copy(Blocks.WATER)){});
+
         STILL_DIARREE = Registry.register(Registry.FLUID, new Identifier(MOD_ID, "diarree"), new Diarree.Still());
         FLOWING_DIARREE = Registry.register(Registry.FLUID, new Identifier(MOD_ID, "flowing_diarree"), new Diarree.Flowing());
         DIARREE_BUCKET = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "diarree_bucket"),
                 new BucketItem(STILL_DIARREE, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
+        DIARREE = Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "diarree"), new FluidBlock(STILL_DIARREE, FabricBlockSettings.copy(Blocks.WATER)){});
 
 
         ModItems.registerModItems();
