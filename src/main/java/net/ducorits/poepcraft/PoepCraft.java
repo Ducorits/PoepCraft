@@ -22,6 +22,8 @@ public class PoepCraft implements ModInitializer {
 //            DEMO_BLOCK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, "tutorial:demo_block_entity", FabricBlockEntityTypeBuilder.create(HoopKak::new, HoopKak).build(null));
 //        }
 
+
+
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
     }

@@ -10,9 +10,26 @@ public class ModBlocks {
     public static final Block KAK = new Block(FabricBlockSettings.of(Material.SOIL, MapColor.DIRT_BROWN).strength(1F));
     public static final HoopKak HOOP_KAK = new HoopKak(FabricBlockSettings.of(Material.SOIL, MapColor.DIRT_BROWN).strength(1F));
             //public static final Block STONE = Blocks.register("stone", new Block(AbstractBlock.Settings.of(Material.STONE, MapColor.STONE_GRAY).requiresTool().strength(1.5f, 6.0f)));
+
+
+
+    // FabricBlockSettings used for WcRolGordijn
+    private static FabricBlockSettings set = FabricBlockSettings.of(Material.STONE)
+            .collidable(false)
+            .breakByHand(true)
+            .strength(0.5f)
+            .noCollision();
+
+
+    public static final Block WcRolGordijn = new Block(set);
+
+
+
     public static void registerModBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(PoepCraft.MOD_ID, "kak"), KAK);
         Registry.register(Registry.BLOCK, new Identifier(PoepCraft.MOD_ID, "hoop_kak"), HOOP_KAK);
+        Registry.register(Registry.BLOCK, new Identifier(PoepCraft.MOD_ID, "wcrolgordijn"), WcRolGordijn);
+
         PoepCraft.LOGGER.info("Registering Mod Blocks for " + PoepCraft.MOD_ID);
     }
 }
