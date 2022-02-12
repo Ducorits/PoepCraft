@@ -43,6 +43,8 @@ public class PoepCraft implements ModInitializer {
         DIARREE_BUCKET = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "diarree_bucket"),
                 new BucketItem(STILL_DIARREE, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
+
+
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
     }
