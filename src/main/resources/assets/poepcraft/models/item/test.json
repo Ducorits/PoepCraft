@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "testmod:item/big_bertha"
+    "layer0": "poepcraft:item/big_bertha"
   }
 }

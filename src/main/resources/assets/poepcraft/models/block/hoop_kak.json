@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "testmod:block/kak",
-		"particle": "testmod:block/kak"
+		"0": "poepcraft:block/kak",
+		"particle": "poepcraft:block/kak"
 	},
 	"elements": [
 		{
