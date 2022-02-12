@@ -1,28 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "testmod",
+  "id": "poepcraft",
   "version": "${version}",
 
-  "name": "Test mod",
+  "name": "PoepCraft",
   "description": "This mod is to learn and test.",
   "authors": [
-    "Ducorits"
+    "Ducorits",
+    "JopjeKnopje"
+
   ],
   "contact": {
     "homepage": "https://fabricmc.net/"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/testmod/icon.png",
+  "icon": "assets/poepcraft/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.ducorits.testmod.TestMod"
+      "net.ducorits.poepcraft.PoepCraft"
     ]
   },
   "mixins": [
-    "testmod.mixins.json"
+    "poepcraft.mixins.json"
   ],
 
   "depends": {

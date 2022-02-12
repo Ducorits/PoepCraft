@@ -1,4 +1,4 @@
-package net.ducorits.testmod.block;
+package net.ducorits.poepcraft.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -19,6 +19,7 @@ public class HoopKak extends Block {
     public HoopKak(Settings settings) {
         super(settings);
     }
+
 
 
     @Override

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"1": "testmod:item/big_bertha"
+		"1": "poepcraft:item/big_bertha"
 	},
 	"elements": [
 		{

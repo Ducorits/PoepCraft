@@ -1,17 +1,13 @@
-package net.ducorits.testmod;
+package net.ducorits.poepcraft;
 
-//import net.ducorits.testmod.block.HoopKakEntity;
-import net.ducorits.testmod.block.ModBlocks;
-import net.ducorits.testmod.item.ModItems;
+import net.ducorits.poepcraft.block.ModBlocks;
+import net.ducorits.poepcraft.item.ModItems;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
-import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class TestMod implements ModInitializer {
-    public static final String MOD_ID = "testmod";
+public class PoepCraft implements ModInitializer {
+    public static final String MOD_ID = "poepcraft";
     public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 
     @Override
@@ -25,6 +21,7 @@ public class TestMod implements ModInitializer {
 //        public void onInitialize() {
 //            DEMO_BLOCK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, "tutorial:demo_block_entity", FabricBlockEntityTypeBuilder.create(HoopKak::new, HoopKak).build(null));
 //        }
+
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
     }

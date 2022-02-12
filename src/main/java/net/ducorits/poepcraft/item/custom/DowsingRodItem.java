@@ -1,4 +1,4 @@
-package net.ducorits.testmod.item.custom;
+package net.ducorits.poepcraft.item.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
