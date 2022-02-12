@@ -1,6 +1,7 @@
 package net.ducorits.poepcraft.item;
 
 import net.ducorits.poepcraft.PoepCraft;
+import net.ducorits.poepcraft.block.WcRolGordijn;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -29,7 +30,7 @@ public class ModItems {
         PoepCraft.LOGGER.info("Registering Mod Items for " + PoepCraft.MOD_ID);
         Registry.register(Registry.ITEM, new Identifier("poepcraft", "kak"), new BlockItem(KAK, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
         Registry.register(Registry.ITEM, new Identifier("poepcraft", "hoop_kak"), new BlockItem(HOOP_KAK, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
-        Registry.register(Registry.ITEM, new Identifier("poepcraft", "wcrolgordijn"), new BlockItem(WcRolGordijn,
+        Registry.register(Registry.ITEM, new Identifier("poepcraft", WcRolGordijn.NAME), new BlockItem(wcrolgordijn,
                 new FabricItemSettings().group(ItemGroup.MISC)));
 
     }
