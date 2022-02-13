@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "poepcraft:block/wc_rol_gordijn", "uvlock": false },
+    "facing=east":  { "model": "poepcraft:block/wc_rol_gordijn", "y":  90, "uvlock": false },
+    "facing=south": { "model": "poepcraft:block/wc_rol_gordijn", "y": 180, "uvlock": false },
+    "facing=west":  { "model": "poepcraft:block/wc_rol_gordijn", "y": 270, "uvlock": false }
+  }
+}

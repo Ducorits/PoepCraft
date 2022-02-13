@@ -13,13 +13,13 @@ public class ModBlocks {
 
 
 
-    public static final WcRolGordijn wcrolgordijn = WcRolGordijn.init();
+    public static final WcRolGordijn WC_ROL_GORDIJN = WcRolGordijn.init();
 
 
     public static void registerModBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(PoepCraft.MOD_ID, "kak"), KAK);
         Registry.register(Registry.BLOCK, new Identifier(PoepCraft.MOD_ID, "hoop_kak"), HOOP_KAK);
-        Registry.register(Registry.BLOCK, new Identifier(PoepCraft.MOD_ID, WcRolGordijn.NAME), wcrolgordijn);
+        Registry.register(Registry.BLOCK, new Identifier(PoepCraft.MOD_ID, WcRolGordijn.NAME), WC_ROL_GORDIJN);
 
         PoepCraft.LOGGER.info("Registering Mod Blocks for " + PoepCraft.MOD_ID);
     }

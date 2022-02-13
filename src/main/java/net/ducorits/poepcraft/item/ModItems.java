@@ -30,7 +30,7 @@ public class ModItems {
         PoepCraft.LOGGER.info("Registering Mod Items for " + PoepCraft.MOD_ID);
         Registry.register(Registry.ITEM, new Identifier("poepcraft", "kak"), new BlockItem(KAK, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
         Registry.register(Registry.ITEM, new Identifier("poepcraft", "hoop_kak"), new BlockItem(HOOP_KAK, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
-        Registry.register(Registry.ITEM, new Identifier("poepcraft", WcRolGordijn.NAME), new BlockItem(wcrolgordijn,
+        Registry.register(Registry.ITEM, new Identifier("poepcraft", WcRolGordijn.NAME), new BlockItem(WC_ROL_GORDIJN,
                 new FabricItemSettings().group(ItemGroup.MISC)));
 
     }

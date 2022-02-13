@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "poepcraft:block/wc_rolgordijn",
-		"particle": "poepcraft:block/wc_rolgordijn"
+		"0": "poepcraft:block/wc_rol_gordijn",
+		"particle": "poepcraft:block/wc_rol_gordijn"
 	},
 	"elements": [
 		{
