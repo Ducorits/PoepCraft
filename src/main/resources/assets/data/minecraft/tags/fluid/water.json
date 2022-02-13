@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values":
+  [
+    "poepcraft:block/diarree",
+    "poepcraft:block/flowing_diarree"
+  ]
+}

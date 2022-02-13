@@ -11,12 +11,12 @@ import net.minecraft.state.property.Properties;
 public abstract class Diarree extends PoepCraftFluid {
     @Override
     public Fluid getStill() {
-        return PoepCraft.STILL_DIARREE;
+        return PoepCraft.DIARREE_STIL;
     }
 
     @Override
     public Fluid getFlowing() {
-        return PoepCraft.FLOWING_DIARREE;
+        return PoepCraft.DIARREE_FLOW;
     }
 
     @Override

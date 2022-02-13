@@ -14,7 +14,7 @@ import net.minecraft.world.WorldView;
 
 public abstract class PoepCraftFluid extends FlowableFluid {
     /**
-     * @return whether the given fluids an instance of this fluids
+     * @return whether the given fluid an instance of this fluid
      */
     @Override
     public boolean matchesType(Fluid fluid) {
@@ -22,7 +22,7 @@ public abstract class PoepCraftFluid extends FlowableFluid {
     }
 
     /**
-     * @return whether the fluids infinite like water
+     * @return whether the fluid infinite like water
      */
     @Override
     protected boolean isInfinite() {
@@ -30,7 +30,7 @@ public abstract class PoepCraftFluid extends FlowableFluid {
     }
 
     /**
-     * Perform actions when fluids flows into a replaceable block. Water drops
+     * Perform actions when fluid flows into a replaceable block. Water drops
      * the block's loot table. Lava plays the "block.lava.extinguish" sound.
      */
     @Override
