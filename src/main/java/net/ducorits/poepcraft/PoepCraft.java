@@ -20,10 +20,10 @@ import org.apache.logging.log4j.Logger;
 public class PoepCraft implements ModInitializer {
     public static final String MOD_ID = "poepcraft";
     public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
-    public static Block DIARREE;
-    public static FlowableFluid STILL_DIARREE;
-    public static FlowableFluid FLOWING_DIARREE;
+    public static FlowableFluid DIARREE_STIL;
+    public static FlowableFluid DIARREE_FLOW;
     public static Item DIARREE_BUCKET;
+    public static Block DIARREE;
 
 
     @Override
@@ -38,12 +38,12 @@ public class PoepCraft implements ModInitializer {
 //            DEMO_BLOCK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, "tutorial:demo_block_entity", FabricBlockEntityTypeBuilder.create(HoopKak::new, HoopKak).build(null));
 //        }
 
-        STILL_DIARREE = Registry.register(Registry.FLUID, new Identifier(MOD_ID, "diarree"), new Diarree.Still());
-        FLOWING_DIARREE = Registry.register(Registry.FLUID, new Identifier(MOD_ID, "flowing_diarree"), new Diarree.Flowing());
-        DIARREE_BUCKET = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "diarree_bucket"),
-                new BucketItem(STILL_DIARREE, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
-        DIARREE = Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "diarree"), new FluidBlock(STILL_DIARREE, FabricBlockSettings.copy(Blocks.WATER)){});
+        DIARREE_STIL = Registry.register(Registry.FLUID, new Identifier(MOD_ID, "diarree"), new Diarree.Still());
+        DIARREE_FLOW = Registry.register(Registry.FLUID, new Identifier(MOD_ID, "flowing_diarree"), new Diarree.Flowing());
+        DIARREE_BUCKET = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "diarree_bucket"),
+                new BucketItem(DIARREE_STIL, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
+        DIARREE = Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "diarree"), new FluidBlock(DIARREE_STIL, FabricBlockSettings.copy(Blocks.WATER)){});
 
 
         ModItems.registerModItems();
