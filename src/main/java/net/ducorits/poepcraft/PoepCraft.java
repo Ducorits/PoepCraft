@@ -39,8 +39,8 @@ public class PoepCraft implements ModInitializer {
 //        }
 
 
-        DIARREE_STIL = Registry.register(Registry.FLUID, new Identifier(MOD_ID, "diarree"), new Diarree.Still());
-        DIARREE_FLOW = Registry.register(Registry.FLUID, new Identifier(MOD_ID, "flowing_diarree"), new Diarree.Flowing());
+        DIARREE_STIL = Registry.register(Registry.FLUID, new Identifier(MOD_ID, "diarree_stil"), new Diarree.Still());
+        DIARREE_FLOW = Registry.register(Registry.FLUID, new Identifier(MOD_ID, "diarree_flow"), new Diarree.Flowing());
         DIARREE_BUCKET = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "diarree_bucket"),
                 new BucketItem(DIARREE_STIL, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
         DIARREE = Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "diarree"), new FluidBlock(DIARREE_STIL, FabricBlockSettings.copy(Blocks.WATER)){});

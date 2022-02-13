@@ -56,7 +56,7 @@ public abstract class PoepCraftFluid extends FlowableFluid {
      */
     @Override
     protected int getFlowSpeed(WorldView worldView) {
-        return 2;
+        return 1;
     }
 
     /**
@@ -72,7 +72,7 @@ public abstract class PoepCraftFluid extends FlowableFluid {
      */
     @Override
     public int getTickRate(WorldView worldView) {
-        return 5;
+        return 30;
     }
 
     /**

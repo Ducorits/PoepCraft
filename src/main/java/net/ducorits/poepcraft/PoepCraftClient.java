@@ -14,6 +14,8 @@ public class PoepCraftClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
+        FluidRenderHandlerRegistry.INSTANCE.register(PoepCraft.DIARREE_STIL, PoepCraft.DIARREE_FLOW, new SimpleFluidRenderHandler(new Identifier("poepcraft:block/diarree_stil"), new Identifier("poepcraft:block/diarree_flow")));
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getSolid(), PoepCraft.DIARREE_STIL, PoepCraft.DIARREE_FLOW);
         //if you want to use custom textures they needs to be registered.
         //In this example this is unnecessary because the vanilla water textures are already registered.
         //To register your custom textures use this method.
@@ -21,8 +23,6 @@ public class PoepCraftClient implements ClientModInitializer {
             registry.register(new Identifier("poepcraft:block/diarree_stil"));
             registry.register(new Identifier("poepcraft:block/diarree_flow"));
         });
-        FluidRenderHandlerRegistry.INSTANCE.register(PoepCraft.DIARREE_STIL, PoepCraft.DIARREE_FLOW, new SimpleFluidRenderHandler(new Identifier("poepcraft:block/diarree_stil"), new Identifier("poepcraft:block/diarree_flow")));
-    BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), PoepCraft.DIARREE_STIL, PoepCraft.DIARREE_FLOW);
 
         // ...
     }

@@ -21,6 +21,9 @@
   "entrypoints": {
     "main": [
       "net.ducorits.poepcraft.PoepCraft"
+    ],
+    "client": [
+      "net.ducorits.poepcraft.PoepCraftClient"
     ]
   },
   "mixins": [
