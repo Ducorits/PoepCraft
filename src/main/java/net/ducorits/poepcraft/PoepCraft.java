@@ -11,6 +11,7 @@ import net.minecraft.block.FluidBlock;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -42,7 +43,7 @@ public class PoepCraft implements ModInitializer {
         DIARREE_STIL = Registry.register(Registry.FLUID, new Identifier(MOD_ID, "diarree_stil"), new Diarree.Still());
         DIARREE_FLOW = Registry.register(Registry.FLUID, new Identifier(MOD_ID, "diarree_flow"), new Diarree.Flowing());
         DIARREE_BUCKET = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "diarree_bucket"),
-                new BucketItem(DIARREE_STIL, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
+                new BucketItem(DIARREE_STIL, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1).group(ItemGroup.MISC)));
         DIARREE = Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "diarree"), new FluidBlock(DIARREE_STIL, FabricBlockSettings.copy(Blocks.WATER)){});
 
 

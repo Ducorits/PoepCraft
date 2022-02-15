@@ -1,5 +1,7 @@
 package net.ducorits.poepcraft;
 
+import net.ducorits.poepcraft.block.KakVlek;
+import net.ducorits.poepcraft.block.ModBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
@@ -23,6 +25,7 @@ public class PoepCraftClient implements ClientModInitializer {
             registry.register(new Identifier("poepcraft:block/diarree_stil"));
             registry.register(new Identifier("poepcraft:block/diarree_flow"));
         });
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KAK_VLEK, RenderLayer.getTranslucent());
 
         // ...
     }

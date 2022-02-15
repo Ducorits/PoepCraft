@@ -2,6 +2,7 @@ package net.ducorits.poepcraft.item;
 
 import net.ducorits.poepcraft.PoepCraft;
 import net.ducorits.poepcraft.block.WcRolGordijn;
+import net.ducorits.poepcraft.item.custom.CrystallStaff;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -13,7 +14,7 @@ import static net.ducorits.poepcraft.block.ModBlocks.*;
 public class ModItems {
     public static final Item BIG_BERTHA = registerItem("big_bertha", new SwordItem(ToolMaterials.DIAMOND, 6, 2,
             new FabricItemSettings().group(ItemGroup.COMBAT).rarity(Rarity.EPIC)));
-    public static final Item CRYSTAL_STAFF = registerItem("crystal_staff", new Item(new FabricItemSettings().group(ItemGroup.COMBAT).maxDamage(10).rarity(Rarity.EPIC)));
+    public static final Item CRYSTAL_STAFF = registerItem("crystal_staff", new CrystallStaff(new FabricItemSettings().group(ItemGroup.COMBAT).maxDamage(10).rarity(Rarity.EPIC)));
 
 
 
@@ -30,6 +31,7 @@ public class ModItems {
         PoepCraft.LOGGER.info("Registering Mod Items for " + PoepCraft.MOD_ID);
         Registry.register(Registry.ITEM, new Identifier("poepcraft", "kak"), new BlockItem(KAK, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
         Registry.register(Registry.ITEM, new Identifier("poepcraft", "hoop_kak"), new BlockItem(HOOP_KAK, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
+        Registry.register(Registry.ITEM, new Identifier("poepcraft", "kak_vlek"), new BlockItem(KAK_VLEK, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
         Registry.register(Registry.ITEM, new Identifier("poepcraft", WcRolGordijn.NAME), new BlockItem(WC_ROL_GORDIJN,
                 new FabricItemSettings().group(ItemGroup.MISC)));
 

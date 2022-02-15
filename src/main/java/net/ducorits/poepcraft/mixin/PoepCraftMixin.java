@@ -11,6 +11,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class PoepCraftMixin {
 	@Inject(at = @At("HEAD"), method = "init()V")
 	private void init(CallbackInfo info) {
-		PoepCraft.LOGGER.info("This line is printed by test mod mixin!");
+		PoepCraft.LOGGER.info("This line is printed by PoepCraft mixin!");
 	}
 }

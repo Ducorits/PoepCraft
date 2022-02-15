@@ -15,22 +15,22 @@ public class DowsingRodItem extends Item {
     }
 
 
-    @Override
-    public ActionResult useOnBlock(ItemUsageContext context) {
+//    @Override
+//    public ActionResult useOnBlock(ItemUsageContext context) {
+//
+//
+//
+//        return super.useOnBlock(context);
+//    }
 
+//    private void outputValuableCoordinates(BlockPos blockPos, PlayerEntity player, Block blockBelow) {
+//        player.sendMessage(new LiteralText("Found " + blockBelow.asItem().getName().getString() + " at " +
+//                "(" + blockPos.getX() + ", " + blockPos.getY() + "," + blockPos.getZ() + ")"), false);
+//    }
 
-
-        return super.useOnBlock(context);
-    }
-
-    private void outputValuableCoordinates(BlockPos blockPos, PlayerEntity player, Block blockBelow) {
-        player.sendMessage(new LiteralText("Found " + blockBelow.asItem().getName().getString() + " at " +
-                "(" + blockPos.getX() + ", " + blockPos.getY() + "," + blockPos.getZ() + ")"), false);
-    }
-
-    private boolean isValuableBlock(Block block) {
-        return block == Blocks.COAL_ORE || block == Blocks.COPPER_ORE
-                || block == Blocks.DIAMOND_ORE || block == Blocks.IRON_ORE;
-    }
+//    private boolean isValuableBlock(Block block) {
+//        return block == Blocks.COAL_ORE || block == Blocks.COPPER_ORE
+//                || block == Blocks.DIAMOND_ORE || block == Blocks.IRON_ORE;
+//    }
 
 }
